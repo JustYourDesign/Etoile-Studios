@@ -1,4 +1,4 @@
-export type CategorySlug = "event" | "portrait" | "graduation" | "real-estate" | "fashion" | "cars" | "djs";
+export type CategorySlug = "event" | "portrait" | "graduation" | "real-estate" | "fashion" | "cars" | "djs" | "celebrations";
 
 export type GalleryImage = {
   id: string;
@@ -141,6 +141,20 @@ const djUrls = [
   "/images/djs/dj-port-3.jpg",
 ];
 
+const celebrationUrls = [
+  "/images/celebrations/celebration-03.jpg",
+  "/images/celebrations/celebration-05.jpg",
+  "/images/celebrations/celebration-08.jpg",
+  "/images/celebrations/celebration-04.jpg",
+  "/images/celebrations/celebration-09.jpg",
+  "/images/celebrations/celebration-01.jpg",
+  "/images/celebrations/celebration-02.jpg",
+  "/images/celebrations/celebration-11.jpg",
+  "/images/celebrations/celebration-10.jpg",
+  "/images/celebrations/celebration-06.jpg",
+  "/images/celebrations/celebration-07.jpg",
+];
+
 export const portfolioCategories: PortfolioCategory[] = [
   {
     slug: "event",
@@ -226,6 +240,18 @@ export const portfolioCategories: PortfolioCategory[] = [
     teaserImage: "/images/djs/dj-port-1.jpg",
     teaserCaption: "Behind The Decks",
     images: buildImages("DJs", djUrls, 99),
+  },
+  {
+    slug: "celebrations",
+    title: "Celebrations Photography",
+    shortTitle: "Celebrations",
+    subtitle: "Mischa's 21st",
+    description:
+      "Birthdays and private celebrations, documented for the outfits, the guests and the night itself.",
+    heroImage: "/images/celebrations/celebration-03.jpg",
+    teaserImage: "/images/celebrations/celebration-03.jpg",
+    teaserCaption: "Mischa's 21st",
+    images: buildImages("Celebrations", celebrationUrls, 99),
   },
 ];
 
